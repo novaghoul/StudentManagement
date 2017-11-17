@@ -149,12 +149,58 @@ CREATE TABLE Result
 	FOREIGN KEY (IDSubject) REFERENCES dbo.Subject(ID),
 	FOREIGN KEY (IDStudent) REFERENCES dbo.Student(ID)
 )
-
+GO
 
 
 --
---
---
+-- THÊM RECORD
+-- 1.bảng nhân viên 
+-- 2.bảng tài khoản
+-- 3.bảng công nợ
+-- 4.bảng sinh viên
+-- 5.bảng chi tiết nợ
+-- 6.bảng môn học
+-- 7.bảng lớp
+-- 8.bảng chi tiết lớp
+-- 9.bảng kết qua học tập
+
+
+-- 1.bảng nhân viên
+INSERT dbo.Staff ( Name, Avatar, Sex, DateOfBirth, Address, Phone, MaritalStatus, Type, Administrator)
+		VALUES(
+		)
+
+
+
+-- 2.bảng tài khoản
+
+
+
+-- 3.bảng công nợ
+
+
+
+-- 4.bảng sinh viên
+
+
+
+-- 5.bảng chi tiết nợ
+
+
+
+-- 6.bảng môn học
+
+
+
+-- 7.bảng lớp
+
+
+
+-- 8.bảng chi tiết lớp
+
+
+
+-- 9.bảng kết qua học tập
 
 
 

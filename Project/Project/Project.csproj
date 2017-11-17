@@ -51,101 +51,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="changePassword.cs">
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="UserControl\changePassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="changePassword.Designer.cs">
+    <Compile Include="UserControl\changePassword.Designer.cs">
       <DependentUpon>changePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAddClass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fAddClass.Designer.cs">
-      <DependentUpon>fAddClass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fAddStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fAddStudent.Designer.cs">
-      <DependentUpon>fAddStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fAddSubject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fAddSubject.Designer.cs">
-      <DependentUpon>fAddSubject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fDebt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fDebt.Designer.cs">
-      <DependentUpon>fDebt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fLogin.Designer.cs">
-      <DependentUpon>fLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fMain.Designer.cs">
-      <DependentUpon>fMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fStaff.Designer.cs">
-      <DependentUpon>fStaff.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fManagement.Designer.cs">
-      <DependentUpon>fManagement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fStaffManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fStaffManagement.Designer.cs">
-      <DependentUpon>fStaffManagement.cs</DependentUpon>
-    </Compile>
-    <Compile Include="infoApplication.cs">
+    <Compile Include="UserControl\infoApplication.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="infoApplication.Designer.cs">
+    <Compile Include="UserControl\infoApplication.Designer.cs">
       <DependentUpon>infoApplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="nConnect.cs" />
-    <Compile Include="nDebt.cs">
+    <Compile Include="UserControl\nDebt.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nDebt.Designer.cs">
+    <Compile Include="UserControl\nDebt.Designer.cs">
       <DependentUpon>nDebt.cs</DependentUpon>
     </Compile>
-    <Compile Include="nHome.cs">
+    <Compile Include="UserControl\nHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nHome.Designer.cs">
+    <Compile Include="UserControl\nHome.Designer.cs">
       <DependentUpon>nHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="nList.cs">
+    <Compile Include="UserControl\nList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nList.Designer.cs">
+    <Compile Include="UserControl\nList.Designer.cs">
       <DependentUpon>nList.cs</DependentUpon>
     </Compile>
-    <Compile Include="nManagement.cs">
+    <Compile Include="UserControl\nManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nManagement.Designer.cs">
+    <Compile Include="UserControl\nManagement.Designer.cs">
       <DependentUpon>nManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="nStaff.cs">
+    <Compile Include="UserControl\nStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="nStaff.Designer.cs">
+    <Compile Include="UserControl\nStaff.Designer.cs">
       <DependentUpon>nStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="nLogin.cs">
@@ -162,52 +108,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="changePassword.resx">
+    <EmbeddedResource Include="UserControl\changePassword.resx">
       <DependentUpon>changePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAddClass.resx">
-      <DependentUpon>fAddClass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fAddStudent.resx">
-      <DependentUpon>fAddStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fAddSubject.resx">
-      <DependentUpon>fAddSubject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fDebt.resx">
-      <DependentUpon>fDebt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fMain.resx">
-      <DependentUpon>fMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fStaff.resx">
-      <DependentUpon>fStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fManagement.resx">
-      <DependentUpon>fManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fStaffManagement.resx">
-      <DependentUpon>fStaffManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="infoApplication.resx">
+    <EmbeddedResource Include="UserControl\infoApplication.resx">
       <DependentUpon>infoApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nDebt.resx">
+    <EmbeddedResource Include="UserControl\nDebt.resx">
       <DependentUpon>nDebt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nHome.resx">
+    <EmbeddedResource Include="UserControl\nHome.resx">
       <DependentUpon>nHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nList.resx">
+    <EmbeddedResource Include="UserControl\nList.resx">
       <DependentUpon>nList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nManagement.resx">
+    <EmbeddedResource Include="UserControl\nManagement.resx">
       <DependentUpon>nManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nStaff.resx">
+    <EmbeddedResource Include="UserControl\nStaff.resx">
       <DependentUpon>nStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nLogin.resx">

@@ -51,15 +51,6 @@ D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\bin\Debug\Proj
 D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\bin\Debug\DevComponents.DotNetBar2.xml
 D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
 D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.changePassword.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fAddClass.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fAddStudent.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fAddSubject.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fDebt.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fLogin.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fMain.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fStaff.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fManagement.resources
-D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.fStaffManagement.resources
 D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.infoApplication.resources
 D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.nDebt.resources
 D:\Projects\GitHub\Yuu-Yukimura\StudentManagement\Project\Project\obj\Debug\Project.nList.resources
