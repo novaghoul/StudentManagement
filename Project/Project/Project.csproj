@@ -124,6 +124,12 @@
     <Compile Include="nDebt.Designer.cs">
       <DependentUpon>nDebt.cs</DependentUpon>
     </Compile>
+    <Compile Include="nHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nHome.Designer.cs">
+      <DependentUpon>nHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="nList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="nDebt.resx">
       <DependentUpon>nDebt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nHome.resx">
+      <DependentUpon>nHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nList.resx">
       <DependentUpon>nList.cs</DependentUpon>

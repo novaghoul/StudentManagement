@@ -40,10 +40,11 @@
             this.btnExit = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelsideMenu = new System.Windows.Forms.Panel();
-            this.btninfoApplication = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnInfoApplication = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnManagement = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnList = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDebt = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnHome = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnStaff = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelName = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.nMainElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.headerDragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.sideMain = new System.Windows.Forms.Panel();
+            this.infoHome = new Project.nHome();
             this.infoApplication = new Project.infoApplication();
             this.infochangePassword = new Project.changePassword();
             this.infoList = new Project.nList();
@@ -63,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.panelsideMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btninfoApplication)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInfoApplication)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.sideMain.SuspendLayout();
@@ -79,8 +81,9 @@
             this.header.Controls.Add(this.btnMenu);
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Margin = new System.Windows.Forms.Padding(4);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(803, 40);
+            this.header.Size = new System.Drawing.Size(1071, 49);
             this.header.TabIndex = 0;
             // 
             // label2
@@ -88,9 +91,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(38, 9);
+            this.label2.Location = new System.Drawing.Point(51, 11);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 21);
+            this.label2.Size = new System.Drawing.Size(177, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Trung tâm anh ngữ";
             // 
@@ -99,12 +103,14 @@
             this.menuStripLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(22)))), ((int)(((byte)(33)))));
             this.menuStripLogin.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStripLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.menuStripLogin.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStripLogin.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loginToolStripMenuItem});
             this.menuStripLogin.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
-            this.menuStripLogin.Location = new System.Drawing.Point(656, 6);
+            this.menuStripLogin.Location = new System.Drawing.Point(875, 7);
             this.menuStripLogin.Name = "menuStripLogin";
-            this.menuStripLogin.Size = new System.Drawing.Size(83, 29);
+            this.menuStripLogin.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStripLogin.Size = new System.Drawing.Size(101, 36);
             this.menuStripLogin.TabIndex = 3;
             this.menuStripLogin.Text = "menuStrip1";
             // 
@@ -116,14 +122,14 @@
             this.loginToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.loginToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("loginToolStripMenuItem.Image")));
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(93, 32);
             this.loginToolStripMenuItem.Text = "Login";
             // 
             // btnChangePassword
             // 
             this.btnChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePassword.Image")));
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(173, 26);
+            this.btnChangePassword.Size = new System.Drawing.Size(207, 32);
             this.btnChangePassword.Text = "Đổi mật khẩu";
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
@@ -131,7 +137,7 @@
             // 
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(173, 26);
+            this.btnLogout.Size = new System.Drawing.Size(207, 32);
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
@@ -141,9 +147,10 @@
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
             this.btnMinimize.ImageActive = null;
-            this.btnMinimize.Location = new System.Drawing.Point(745, 12);
+            this.btnMinimize.Location = new System.Drawing.Point(993, 15);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(20, 20);
+            this.btnMinimize.Size = new System.Drawing.Size(27, 25);
             this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimize.TabIndex = 0;
             this.btnMinimize.TabStop = false;
@@ -156,9 +163,10 @@
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageActive = null;
-            this.btnExit.Location = new System.Drawing.Point(771, 12);
+            this.btnExit.Location = new System.Drawing.Point(1028, 15);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(20, 20);
+            this.btnExit.Size = new System.Drawing.Size(27, 25);
             this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnExit.TabIndex = 0;
             this.btnExit.TabStop = false;
@@ -171,9 +179,10 @@
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
             this.btnMenu.ImageActive = null;
-            this.btnMenu.Location = new System.Drawing.Point(12, 10);
+            this.btnMenu.Location = new System.Drawing.Point(16, 12);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(20, 20);
+            this.btnMenu.Size = new System.Drawing.Size(27, 25);
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMenu.TabIndex = 0;
             this.btnMenu.TabStop = false;
@@ -183,33 +192,36 @@
             // panelsideMenu
             // 
             this.panelsideMenu.BackColor = System.Drawing.Color.White;
-            this.panelsideMenu.Controls.Add(this.btninfoApplication);
+            this.panelsideMenu.Controls.Add(this.btnInfoApplication);
             this.panelsideMenu.Controls.Add(this.btnManagement);
             this.panelsideMenu.Controls.Add(this.btnList);
             this.panelsideMenu.Controls.Add(this.btnDebt);
+            this.panelsideMenu.Controls.Add(this.btnHome);
             this.panelsideMenu.Controls.Add(this.btnStaff);
             this.panelsideMenu.Controls.Add(this.panel3);
             this.panelsideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelsideMenu.Location = new System.Drawing.Point(0, 40);
+            this.panelsideMenu.Location = new System.Drawing.Point(0, 49);
+            this.panelsideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelsideMenu.Name = "panelsideMenu";
-            this.panelsideMenu.Size = new System.Drawing.Size(200, 452);
+            this.panelsideMenu.Size = new System.Drawing.Size(267, 557);
             this.panelsideMenu.TabIndex = 1;
             // 
-            // btninfoApplication
+            // btnInfoApplication
             // 
-            this.btninfoApplication.BackColor = System.Drawing.Color.White;
-            this.btninfoApplication.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btninfoApplication.Image = ((System.Drawing.Image)(resources.GetObject("btninfoApplication.Image")));
-            this.btninfoApplication.ImageActive = null;
-            this.btninfoApplication.Location = new System.Drawing.Point(170, 425);
-            this.btninfoApplication.Name = "btninfoApplication";
-            this.btninfoApplication.Size = new System.Drawing.Size(25, 25);
-            this.btninfoApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btninfoApplication.TabIndex = 2;
-            this.btninfoApplication.TabStop = false;
-            this.btninfoApplication.Tag = "";
-            this.btninfoApplication.Zoom = 20;
-            this.btninfoApplication.Click += new System.EventHandler(this.btninfoApplication_Click);
+            this.btnInfoApplication.BackColor = System.Drawing.Color.White;
+            this.btnInfoApplication.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInfoApplication.Image = ((System.Drawing.Image)(resources.GetObject("btnInfoApplication.Image")));
+            this.btnInfoApplication.ImageActive = null;
+            this.btnInfoApplication.Location = new System.Drawing.Point(227, 523);
+            this.btnInfoApplication.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInfoApplication.Name = "btnInfoApplication";
+            this.btnInfoApplication.Size = new System.Drawing.Size(33, 31);
+            this.btnInfoApplication.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnInfoApplication.TabIndex = 2;
+            this.btnInfoApplication.TabStop = false;
+            this.btnInfoApplication.Tag = "";
+            this.btnInfoApplication.Zoom = 20;
+            this.btnInfoApplication.Click += new System.EventHandler(this.btnInfoApplication_Click);
             // 
             // btnManagement
             // 
@@ -233,13 +245,14 @@
             this.btnManagement.IconVisible = true;
             this.btnManagement.IconZoom = 50D;
             this.btnManagement.IsTab = true;
-            this.btnManagement.Location = new System.Drawing.Point(0, 234);
+            this.btnManagement.Location = new System.Drawing.Point(0, 329);
+            this.btnManagement.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnManagement.Name = "btnManagement";
             this.btnManagement.Normalcolor = System.Drawing.Color.White;
             this.btnManagement.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btnManagement.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.btnManagement.selected = false;
-            this.btnManagement.Size = new System.Drawing.Size(200, 48);
+            this.btnManagement.Size = new System.Drawing.Size(267, 59);
             this.btnManagement.TabIndex = 1;
             this.btnManagement.Text = "Quản lý";
             this.btnManagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -269,13 +282,14 @@
             this.btnList.IconVisible = true;
             this.btnList.IconZoom = 50D;
             this.btnList.IsTab = true;
-            this.btnList.Location = new System.Drawing.Point(0, 342);
+            this.btnList.Location = new System.Drawing.Point(0, 462);
+            this.btnList.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnList.Name = "btnList";
             this.btnList.Normalcolor = System.Drawing.Color.White;
             this.btnList.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btnList.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.btnList.selected = false;
-            this.btnList.Size = new System.Drawing.Size(200, 48);
+            this.btnList.Size = new System.Drawing.Size(267, 59);
             this.btnList.TabIndex = 1;
             this.btnList.Text = "Danh sách";
             this.btnList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -305,13 +319,14 @@
             this.btnDebt.IconVisible = true;
             this.btnDebt.IconZoom = 50D;
             this.btnDebt.IsTab = true;
-            this.btnDebt.Location = new System.Drawing.Point(0, 288);
+            this.btnDebt.Location = new System.Drawing.Point(0, 395);
+            this.btnDebt.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnDebt.Name = "btnDebt";
             this.btnDebt.Normalcolor = System.Drawing.Color.White;
             this.btnDebt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btnDebt.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.btnDebt.selected = false;
-            this.btnDebt.Size = new System.Drawing.Size(200, 48);
+            this.btnDebt.Size = new System.Drawing.Size(267, 59);
             this.btnDebt.TabIndex = 1;
             this.btnDebt.Text = "Công nợ";
             this.btnDebt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -319,10 +334,47 @@
             this.btnDebt.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDebt.Click += new System.EventHandler(this.btnDebt_Click);
             // 
+            // btnHome
+            // 
+            this.btnHome.Activecolor = System.Drawing.Color.Gainsboro;
+            this.btnHome.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHome.BorderRadius = 0;
+            this.btnHome.ButtonText = "Home";
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.DisabledColor = System.Drawing.Color.Gray;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHome.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnHome.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHome.Iconimage")));
+            this.btnHome.Iconimage_right = null;
+            this.btnHome.Iconimage_right_Selected = null;
+            this.btnHome.Iconimage_Selected = null;
+            this.btnHome.IconMarginLeft = 0;
+            this.btnHome.IconMarginRight = 0;
+            this.btnHome.IconRightVisible = true;
+            this.btnHome.IconRightZoom = 0D;
+            this.btnHome.IconVisible = true;
+            this.btnHome.IconZoom = 50D;
+            this.btnHome.IsTab = true;
+            this.btnHome.Location = new System.Drawing.Point(0, 202);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Normalcolor = System.Drawing.Color.White;
+            this.btnHome.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.btnHome.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.btnHome.selected = true;
+            this.btnHome.Size = new System.Drawing.Size(267, 59);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHome.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.btnHome.TextFont = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // btnStaff
             // 
             this.btnStaff.Activecolor = System.Drawing.Color.Gainsboro;
-            this.btnStaff.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnStaff.BackColor = System.Drawing.Color.White;
             this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStaff.BorderRadius = 0;
             this.btnStaff.ButtonText = "Nhân viên";
@@ -341,13 +393,14 @@
             this.btnStaff.IconVisible = true;
             this.btnStaff.IconZoom = 50D;
             this.btnStaff.IsTab = true;
-            this.btnStaff.Location = new System.Drawing.Point(0, 180);
+            this.btnStaff.Location = new System.Drawing.Point(0, 263);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Normalcolor = System.Drawing.Color.White;
             this.btnStaff.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.btnStaff.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
-            this.btnStaff.selected = true;
-            this.btnStaff.Size = new System.Drawing.Size(200, 48);
+            this.btnStaff.selected = false;
+            this.btnStaff.Size = new System.Drawing.Size(267, 59);
             this.btnStaff.TabIndex = 1;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -362,8 +415,9 @@
             this.panel3.Controls.Add(this.logo);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 149);
+            this.panel3.Size = new System.Drawing.Size(267, 183);
             this.panel3.TabIndex = 0;
             // 
             // labelName
@@ -371,18 +425,20 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.Silver;
-            this.labelName.Location = new System.Drawing.Point(23, 91);
+            this.labelName.Location = new System.Drawing.Point(31, 112);
+            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(142, 21);
+            this.labelName.Size = new System.Drawing.Size(177, 28);
             this.labelName.TabIndex = 1;
             this.labelName.Text = "Trung tâm anh ngữ";
             // 
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(48, 39);
+            this.logo.Location = new System.Drawing.Point(64, 48);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(100, 50);
+            this.logo.Size = new System.Drawing.Size(133, 62);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
@@ -401,6 +457,7 @@
             // 
             // sideMain
             // 
+            this.sideMain.Controls.Add(this.infoHome);
             this.sideMain.Controls.Add(this.infoApplication);
             this.sideMain.Controls.Add(this.infochangePassword);
             this.sideMain.Controls.Add(this.infoList);
@@ -408,49 +465,63 @@
             this.sideMain.Controls.Add(this.infoManagement);
             this.sideMain.Controls.Add(this.infoStaff);
             this.sideMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideMain.Location = new System.Drawing.Point(200, 40);
+            this.sideMain.Location = new System.Drawing.Point(267, 49);
+            this.sideMain.Margin = new System.Windows.Forms.Padding(4);
             this.sideMain.Name = "sideMain";
-            this.sideMain.Size = new System.Drawing.Size(603, 452);
+            this.sideMain.Size = new System.Drawing.Size(804, 557);
             this.sideMain.TabIndex = 2;
+            // 
+            // infoHome
+            // 
+            this.infoHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoHome.Location = new System.Drawing.Point(0, 0);
+            this.infoHome.Name = "infoHome";
+            this.infoHome.Size = new System.Drawing.Size(804, 557);
+            this.infoHome.TabIndex = 6;
             // 
             // infoApplication
             // 
             this.infoApplication.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoApplication.Location = new System.Drawing.Point(0, 0);
+            this.infoApplication.Margin = new System.Windows.Forms.Padding(5);
             this.infoApplication.Name = "infoApplication";
-            this.infoApplication.Size = new System.Drawing.Size(603, 452);
+            this.infoApplication.Size = new System.Drawing.Size(804, 557);
             this.infoApplication.TabIndex = 5;
             // 
             // infochangePassword
             // 
             this.infochangePassword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infochangePassword.Location = new System.Drawing.Point(0, 0);
+            this.infochangePassword.Margin = new System.Windows.Forms.Padding(5);
             this.infochangePassword.Name = "infochangePassword";
-            this.infochangePassword.Size = new System.Drawing.Size(603, 452);
+            this.infochangePassword.Size = new System.Drawing.Size(804, 557);
             this.infochangePassword.TabIndex = 4;
             // 
             // infoList
             // 
             this.infoList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoList.Location = new System.Drawing.Point(0, 0);
+            this.infoList.Margin = new System.Windows.Forms.Padding(5);
             this.infoList.Name = "infoList";
-            this.infoList.Size = new System.Drawing.Size(603, 452);
+            this.infoList.Size = new System.Drawing.Size(804, 557);
             this.infoList.TabIndex = 3;
             // 
             // infoDebt
             // 
             this.infoDebt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoDebt.Location = new System.Drawing.Point(0, 0);
+            this.infoDebt.Margin = new System.Windows.Forms.Padding(5);
             this.infoDebt.Name = "infoDebt";
-            this.infoDebt.Size = new System.Drawing.Size(603, 452);
+            this.infoDebt.Size = new System.Drawing.Size(804, 557);
             this.infoDebt.TabIndex = 2;
             // 
             // infoManagement
             // 
             this.infoManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoManagement.Location = new System.Drawing.Point(0, 0);
+            this.infoManagement.Margin = new System.Windows.Forms.Padding(5);
             this.infoManagement.Name = "infoManagement";
-            this.infoManagement.Size = new System.Drawing.Size(603, 452);
+            this.infoManagement.Size = new System.Drawing.Size(804, 557);
             this.infoManagement.TabIndex = 1;
             // 
             // infoStaff
@@ -458,22 +529,24 @@
             this.infoStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.infoStaff.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoStaff.Location = new System.Drawing.Point(0, 0);
+            this.infoStaff.Margin = new System.Windows.Forms.Padding(5);
             this.infoStaff.Name = "infoStaff";
-            this.infoStaff.Size = new System.Drawing.Size(603, 452);
+            this.infoStaff.Size = new System.Drawing.Size(804, 557);
             this.infoStaff.TabIndex = 0;
             // 
             // nMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(803, 492);
+            this.ClientSize = new System.Drawing.Size(1071, 606);
             this.Controls.Add(this.sideMain);
             this.Controls.Add(this.panelsideMenu);
             this.Controls.Add(this.header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStripLogin;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "nMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "nMain";
@@ -485,7 +558,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.panelsideMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btninfoApplication)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInfoApplication)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
@@ -521,7 +594,9 @@
         private nDebt infoDebt;
         private nList infoList;
         private changePassword infochangePassword;
-        private Bunifu.Framework.UI.BunifuImageButton btninfoApplication;
+        private Bunifu.Framework.UI.BunifuImageButton btnInfoApplication;
         private infoApplication infoApplication;
+        private Bunifu.Framework.UI.BunifuFlatButton btnHome;
+        private nHome infoHome;
     }
 }

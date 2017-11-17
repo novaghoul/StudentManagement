@@ -15,9 +15,14 @@ namespace Project
         public nMain()
         {
             InitializeComponent();
-            infoStaff.BringToFront();
+            infoHome.BringToFront();
         }
 
+        #region Events ( Sự kiện )
+
+        #region Click
+
+        // Click button Exit ( nhấn nút thoát )
         private void btnExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn thoát không ??", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -27,15 +32,13 @@ namespace Project
             }
         }
 
+        // Click button Minimize ( nhấn nút thu nhỏ )
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
+        // Click button Menu ( nhấn nút menu )
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if(panelsideMenu.Width >= 200)
@@ -44,7 +47,7 @@ namespace Project
                 logo.Size = new Size(50, 25);
                 labelName.Visible = false;
                 panelsideMenu.Width = 50;
-                btninfoApplication.Location = new Point(12, 425);
+                btnInfoApplication.Location = new Point(12, 425);
             }
             else
             {
@@ -52,38 +55,70 @@ namespace Project
                 logo.Size = new Size(100,50);
                 labelName.Visible = true;
                 panelsideMenu.Width = 200;
-                btninfoApplication.Location = new Point(170, 425);
+                btnInfoApplication.Location = new Point(170, 425);
             }
         }
 
+        // Click button Home ( nhấn nút Home )
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            infoHome.BringToFront();
+        }
+
+        // Click button Staff ( nhấn nút Nhân viên )
         private void btnStaff_Click(object sender, EventArgs e)
         {
             infoStaff.BringToFront();
         }
 
+        // Click button Management ( nhấn nút Quản lý )
         private void btnManagement_Click(object sender, EventArgs e)
         {
             infoManagement.BringToFront();
         }
 
+        // Click button Debt ( nhấn nút Công nợ )
         private void btnDebt_Click(object sender, EventArgs e)
         {
             infoDebt.BringToFront();
         }
 
+        // Click button List ( nhấn nút Danh sách )
         private void btnList_Click(object sender, EventArgs e)
         {
             infoList.BringToFront();
         }
 
+        // Click button InfoApplication ( nhấn nút Info )
+        private void btnInfoApplication_Click(object sender, EventArgs e)
+        {
+            infoApplication.BringToFront();
+        }
+
+        #endregion
+
+        #region Sự kiện liên quan đến đẳng nhập xuất
+
+        // Click button ChangePassword ( nhấn nút Đổi mật khẩu )
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
             infochangePassword.BringToFront();
         }
 
-        private void btninfoApplication_Click(object sender, EventArgs e)
+        // Click button Logout ( nhấn nút đẳng xuất )
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            infoApplication.BringToFront();
+            this.Close();
         }
+
+        #endregion
+
+        #endregion
+
+        #region Method (Phương thức)
+
+        #endregion
+
+
     }
 }
