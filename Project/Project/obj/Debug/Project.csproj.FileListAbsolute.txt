@@ -1,0 +1,47 @@
+D:\Projects\UML\Project\Project\bin\Debug\Project.exe.config
+D:\Projects\UML\Project\Project\bin\Debug\Project.exe
+D:\Projects\UML\Project\Project\bin\Debug\Project.pdb
+D:\Projects\UML\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+D:\Projects\UML\Project\Project\obj\Debug\Project.fAddStudent.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fDebt.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fLogin.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fMain.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+D:\Projects\UML\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Projects\UML\Project\Project\obj\Debug\Project.exe
+D:\Projects\UML\Project\Project\obj\Debug\Project.pdb
+D:\Projects\UML\Project\Project\obj\Debug\Project.fAddSubject.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fStaff.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fManagement.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fAddClass.resources
+D:\Projects\UML\Project\Project\obj\Debug\Project.fStaffManagement.resources
+D:\Works\Visual Studio\UML\Project\Project\bin\Debug\Project.exe.config
+D:\Works\Visual Studio\UML\Project\Project\bin\Debug\Project.exe
+D:\Works\Visual Studio\UML\Project\Project\bin\Debug\Project.pdb
+D:\Works\Visual Studio\UML\Project\Project\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Works\Visual Studio\UML\Project\Project\bin\Debug\DevComponents.DotNetBar2.xml
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fAddClass.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fAddStudent.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fAddSubject.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fDebt.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fLogin.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fMain.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fStaff.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fManagement.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.fStaffManagement.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.nMain.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.exe
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.pdb
+D:\Works\Visual Studio\UML\Project\Project\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.nLogin.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.nStaff.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.nManagement.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.nDebt.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.nList.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.changePassword.resources
+D:\Works\Visual Studio\UML\Project\Project\obj\Debug\Project.infoApplication.resources
