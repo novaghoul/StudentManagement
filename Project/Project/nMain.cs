@@ -15,6 +15,7 @@ namespace Project
         public nMain()
         {
             InitializeComponent();
+            sidePanel.Top = btnHome.Top;
             infoHome.BringToFront();
         }
 
@@ -43,49 +44,60 @@ namespace Project
         {
             if(panelsideMenu.Width >= 200)
             {
+                LogoTransition.HideSync(logo);
                 logo.Location = new Point(0, 55);
                 logo.Size = new Size(50, 25);
                 labelName.Visible = false;
                 panelsideMenu.Width = 50;
                 btnInfoApplication.Location = new Point(12, 425);
+                this.Size = new Size(653, 492);
+                LogoTransition.ShowSync(logo);
             }
             else
             {
+                LogoTransition.HideSync(logo);
                 logo.Location = new Point(48, 39);
                 logo.Size = new Size(100,50);
                 labelName.Visible = true;
                 panelsideMenu.Width = 200;
                 btnInfoApplication.Location = new Point(170, 425);
+                this.Size = new Size(803, 492);
+                LogoTransition.ShowSync(logo);
             }
         }
 
         // Click button Home ( nhấn nút Home )
         private void btnHome_Click(object sender, EventArgs e)
         {
+            sidePanel.Top = btnHome.Top;
             infoHome.BringToFront();
         }
 
         // Click button Staff ( nhấn nút Nhân viên )
         private void btnStaff_Click(object sender, EventArgs e)
         {
+            sidePanel.Top = btnStaff.Top;
             infoStaff.BringToFront();
         }
 
         // Click button Management ( nhấn nút Quản lý )
         private void btnManagement_Click(object sender, EventArgs e)
         {
+            sidePanel.Top = btnManagement.Top;
             infoManagement.BringToFront();
         }
 
         // Click button Debt ( nhấn nút Công nợ )
         private void btnDebt_Click(object sender, EventArgs e)
         {
+            sidePanel.Top = btnDebt.Top;
             infoDebt.BringToFront();
         }
 
         // Click button List ( nhấn nút Danh sách )
         private void btnList_Click(object sender, EventArgs e)
         {
+            sidePanel.Top = btnList.Top;
             infoList.BringToFront();
         }
 
@@ -111,6 +123,7 @@ namespace Project
             this.Close();
         }
 
+
         #endregion
 
         #endregion
@@ -118,7 +131,5 @@ namespace Project
         #region Method (Phương thức)
 
         #endregion
-
-
     }
 }
